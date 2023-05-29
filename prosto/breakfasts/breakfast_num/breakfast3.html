@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/CSS/style.css">
+    <script src="../../assets/JS/slider.js"></script>
+    <script src="../../assets/JS/upscroll.js"></script>
+    <script src="https://kit.fontawesome.com/f1009812ff.js" crossorigin="anonymous"></script>
+    <title>Завтрак №3</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo"><a href="../../index.html">Prosto</a></div>
+
+                <nav class="nav">
+                    <a class="nav__link" href="../../index.html">Главная</a>
+                    <a class="nav__link" href="../../about_us/about_us.html">о компании</a>
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <a class="nav__link" href="../../rooms/rooms.html">Номера</a>
+                        </div>
+                        <div class="dropdown__content">
+                            <a href="../../rooms/room_num/room1.html" class="nav__link drop">Комната 1</a>
+                            <a href="../../rooms/room_num/room2.html" class="nav__link drop">Комната 2</a>
+                            <a href="../../rooms/room_num/room3.html" class="nav__link drop">Комната 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <a class="nav__link" href="../../breakfasts/breakfast.html">Питание</a>
+                        </div>
+                        <div class="dropdown__content">
+                            <a href="../../breakfasts/breakfast_num/breakfast1.html" class="nav__link drop">Завтрак 1</a>
+                            <a href="../../breakfasts/breakfast_num/breakfast2.html" class="nav__link drop">Завтрак 2</a>
+                            <a href="../../breakfasts/breakfast_num/breakfast3.html" class="nav__link drop">Завтрак 3</a>
+                            <a href="../../breakfasts/breakfast_num/luncheon1.html" class="nav__link drop">Обед 1</a>
+                            <a href="../../breakfasts/breakfast_num/luncheon2.html" class="nav__link drop">Обед 2</a>
+                            <a href="../../breakfasts/breakfast_num/luncheon3.html" class="nav__link drop">Обед 3</a>
+                            <a href="../../breakfasts/breakfast_num/dinner1.html" class="nav__link drop">Ужин 1</a>
+                            <a href="../../breakfasts/breakfast_num/dinner2.html" class="nav__link drop">Ужин 2</a>
+                            <a href="../../breakfasts/breakfast_num/dinner3.html" class="nav__link drop">Ужин 3</a>
+                        </div>
+                    </div>
+                    <a class="nav__link" href="../../reviews/reviews.html">Отзывы</a>
+                    <a class="nav__link" href="../../contacts/contacts.html">Контакты</a>
+                </nav>
+                <div class="nav__burger" onclick="hambHandler()"><span></span></div>
+                
+            </div>
+        </div>
+    </header>
+
+<div class="popup">
+    <ul class="nav__menu">
+        <li><a href="../../index.html">Главная</a></li>
+        <li><a href="../../about_us/about_us.html">О компании</a></li>
+        <li><a href="../../rooms/rooms.html">Номера</a></li>
+        <li><a href="../../breakfasts/breakfast.html">Питание</a></li>
+        <li><a href="../../reviews/reviews.html">Отзывы</a></li>
+        <li><a href="../../contacts/contacts.html">Контакты</a></li>
+        <li><a href="../../news/news.html">Новости</a></li>
+    </ul>
+</div>
+
+
+
+    <div class="up-scroll" onclick="up_scroll()">
+        <div class="arrow">^</div>
+    </div>
+
+
+
+
+<section class="section">
+    <div class="container">
+        
+        <div class="room__rev">
+            <!-- Контейнер слайд-xшоу -->
+                <div class="slideshow-container">
+    
+                    <!-- Полноразмерные изображения с числом и текстом подписи -->
+                    <div class="mySlides fade" style="display: block;">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="../../assets/images/breakfast3/1.gif" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="../../assets/images/breakfast3/2.gif" style="width:100%">
+                    </div>
+                
+                    <!-- Вперед и назад кнопки -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                    <!-- Точки/круги -->
+                    <div class = dots style="text-align:center">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+                <br>
+                
+                
+    
+                <div class="room__rev__content">
+                    <div class="room__rev__title">Завтрак №3</div>
+                    <div class="room__rev__text">В нашей гостинице мы предлагаем вкусный и сытный завтрак, который поможет Вам начать день с энергией и хорошим настроением. Наш завтрак состоит из сендвича с ветчиной из индейки и сыра, который порадует Вас свежестью и нежностью. Также в нашем завтраке есть творожные сырники, которые приготовлены по особому рецепту и имеют нежный вкус. К ним мы предлагаем джем, который добавит яркости и сладости к завтраку. Кроме того, в нашем меню есть каша овсяная или рисовая, которая обеспечит Вас полезными веществами и даст ощущение сытости на долгое время. Все блюда подаются с одноразовыми приборами, чаем и сахаром. Мы гарантируем, что наш завтрак не только удовлетворит Ваш вкус, но и станет приятным началом Вашего дня!</div>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+
+<section class="section not-padding">
+    <div class="container">
+        <div class="breakfast__inner">
+            <div class="breakfast__col">
+                <div class="room__rev__title">Состав рациона:</div>
+                <div class="room__rev__text">Сендвич с ветчиной из индейки и сыра - 100гр.<br>Творожные сырники(100гр.) - 3 шт.<br>Джем порц.(20гр.) - 1 шт.<br>Каша овсяная или рисовая - 120мл.<br>Одноразовые приборы, чай, сахар - по 1 шт.</div>
+            </div>
+
+            <div class="breakfast__col">
+                <div class="room__rev__title">Таблица ЖБУ</div>
+                <table class="breakfast__table">
+                    <tr>
+                        <th>Белки</th>
+                        <th>Жиры</th>
+                        <th>Углеводы</th>
+                        <th>Калории</th>
+                    </tr>
+                    <tr>
+                        <th>14 г.</th>
+                        <th>38 г.</th>
+                        <th>77 г.</th>
+                        <th>568 ккал</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="news__add">
+    <div class="news">
+        <a href="../../news/news.html"><h2>Новости</h2></a>
+        <a href="../../news/news_num/news1.html">В Санкт-Петербурге начался туристический сезон!</a>
+        <a href="../../news/news_num/news2.html">Гостиница Prosto Вошла в топ 100 гостиниц Санкт-Петербурга</a>
+        <a href="../../news/news_num/news3.html">Реконструкция центра Санкт-Петербурга</a>
+    </div>
+    <div class="add">
+        <div class="add__close__inner">
+            <div class="add__close"></div>
+            <a href="#">
+                <div class="add__img">
+                    <img src="../../assets/images/add.gif" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+    
+                <div class="footer__col">
+                    <div class="footer__logo"></div>
+                    <h3>Социальные сети</h3>
+                    <div class="footer__social">
+                        <div class="footer__social__line">
+                            <a href="https://vk.com/prosto_hotel" target="_blank">
+                                <i class="fa-brands fa-vk"></i>
+                                <div class="footer__social__text"> Вконтакте</div>
+                            </a>
+                        </div>
+                        <div class="footer__social__line">
+                            <a href="https://web.telegram.org/a/" target="_blank">
+                                <i class="fa-brands fa-telegram"></i>
+                                <div class="footer__social__text"> Телеграм</div>
+                            </a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3>Адрес гостиницы</h3>
+                    <div class="footer__adres">
+                        <a href="https://yandex.ru/maps/-/CCUsETuQhB" target="_blank">Набережная реки Фонтанки д.90 корп.2, Санкт-Петербург</a>
+                    </div>
+                    <h3>Номер бронирования</h3>
+                    <a class="footer__phone" href="tel:+79656608374">+7(965) 660-83-74</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Номерной фонд</h3>
+                    <a class="footer__link" href="../../rooms/rooms.html">Все номера</a>
+                </div>
+                <div class="footer__col">
+                    <h3>Прочее</h3>
+                    <a class="footer__link" href="../../map-site/map-site.html">Карта сайта</a>
+                </div>
+    
+            </div>
+    
+            <div class="copyright">
+                Неофициальный сайт. Все права не защищены.
+            </div>
+    
+        </div>
+    </footer>
+    <script src="../../assets/JS/burger.js"></script>
+</body>
+</html>
